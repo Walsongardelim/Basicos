@@ -1,0 +1,28 @@
+import java.io.IOException;
+import java.util.Scanner;
+
+public class Main {
+ 
+    public static void main(String[] args) throws IOException {
+        Scanner ler = new Scanner(System.in);
+        
+        int cod1, cod2, num1, num2;
+        double valor1, valor2, total;
+        
+        cod1 = ler.nextInt();System.out.printf(""); 
+        num1 = ler.nextInt();System.out.printf("");
+        valor1 = ler.nextDouble();System.out.printf("");
+        
+        cod2 = ler.nextInt();System.out.printf("");
+        num2 = ler.nextInt();System.out.printf("");
+        valor2 = ler.nextDouble();System.out.printf("");
+        
+        total = (valor1 * num1) + (valor2 * num2);
+        
+        
+        System.out.printf("VALOR A PAGAR: R$ %.2f\n", total);
+        
+        ler.close();
+    }
+ 
+}
