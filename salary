@@ -1,0 +1,21 @@
+import java.io.IOException;
+import java.util.Scanner; 
+
+public class Main {
+ 
+    public static void main(String[] args) throws IOException {
+        
+        Scanner ler = new Scanner(System.in);
+        
+        double num, ht, cash, salary;
+        
+        num = ler.nextDouble();
+        ht = ler.nextDouble();
+        cash = ler.nextDouble();
+        salary = cash * ht;
+        
+        System.out.printf("NUMBER = %.0f \n", num);
+        System.out.printf("SALARY = U$ %.2f", salary);
+    }
+ 
+}
