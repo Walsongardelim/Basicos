@@ -1,0 +1,25 @@
+
+    public static void main(String[] args) throws IOException {
+        Scanner ler = new Scanner(System.in);
+        
+        int A, B, C;
+        
+        A = ler.nextInt();
+        B = ler.nextInt();
+        C = ler.nextInt();
+        
+        if (A > B && A > C){
+            System.out.printf(A + " eh o maior");
+        }
+        if (B > A && B > C){
+            System.out.printf(B + " eh o maior");
+        }
+        if (C > A && C > B){
+            System.out.printf(C + " eh o maior\n");
+        }   
+        
+        ler.close();
+        
+    }
+ 
+}
