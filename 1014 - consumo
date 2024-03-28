@@ -1,0 +1,22 @@
+import java.io.IOException;
+import java.util.Scanner;
+
+public class Main {
+ 
+    public static void main(String[] args) throws IOException {
+        Scanner ler = new Scanner(System.in);
+        
+        int X;
+        double Y, medio;
+        
+        X = ler.nextInt();
+        Y = ler.nextDouble();
+        medio = X/Y;
+        
+        System.out.printf(String.format("%.3f", medio) + " km/l\n");
+        
+        ler.close();
+ 
+    }
+ 
+}
