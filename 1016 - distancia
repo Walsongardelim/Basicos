@@ -1,0 +1,22 @@
+import java.io.IOException;
+import java.util.Scanner;
+
+public class Main {
+ 
+    public static void main(String[] args) throws IOException {
+        Scanner ler = new Scanner(System.in);
+        
+        int x, y, distancia, tempo;
+        
+        x = 60;
+        y = 90;
+        distancia = ler.nextInt();
+        tempo = distancia * 2;
+        
+        
+        System.out.printf(tempo + " minutos\n");
+        ler.close();
+ 
+    }
+ 
+}
