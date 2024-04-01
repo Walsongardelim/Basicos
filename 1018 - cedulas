@@ -1,0 +1,53 @@
+import java.io.IOException;
+import java.util.Scanner;
+
+public class Main {
+ 
+    public static void main(String[] args) throws IOException {
+        Scanner ler = new Scanner(System.in);
+        
+        int entrada, cem = 100, cinq = 50, vinte = 20, dez = 10, cinc = 5, dois = 2, hum = 1;
+        int cont100 = 0, cont50 = 0, cont20 = 0, cont10 = 0, cont5 = 0, cont2 = 0, cont1 = 0;
+        
+        entrada = ler.nextInt();
+        
+        System.out.println(entrada);
+        
+        while(entrada >= 100){
+            entrada = entrada - cem;
+            cont100++;
+        }
+        while(entrada >= 50){
+            entrada = entrada - cinq;
+            cont50++;
+        }
+        while(entrada >= 20){
+            entrada = entrada - vinte;
+            cont20++;
+        }
+        while(entrada >= 10){
+            entrada = entrada - dez;
+            cont10++;
+        }
+        while(entrada >= 5){
+            entrada = entrada - cinc;
+            cont5++;
+        }
+        while(entrada >= 2){
+            entrada = entrada - dois;
+            cont2++;
+        }
+        while(entrada >= 1){
+            entrada = entrada - hum;
+            cont1++;
+        }
+        System.out.printf(cont100 + "%n nota(s) de R$ 100,00\n");
+        System.out.printf(cont50 + "%n nota(s) de R$ 50,00\n");
+        System.out.printf(cont20 + "%n nota(s) de R$ 20,00\n");
+        System.out.printf(cont10 + "%n nota(s) de R$ 10,00\n");
+        System.out.printf(cont5 + "%n nota(s) de R$ 5,00\n");
+        System.out.printf(cont2 + "%n nota(s) de R$ 2,00\n");
+        System.out.printf(cont1 + "%n nota(s) de R$ 1,00\n");
+    }
+ 
+}
